@@ -6,7 +6,8 @@ export default createGlobalStyle`
   --secondary-color: #e6e6e6;
   display: flex;
   justify-content: center;
-  margin-top: 1em;
+  padding: 1em 0;
+  border: #e6e6e6 solid;
 }
 body {
   margin: 0;
@@ -28,5 +29,6 @@ main {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  gap: 10px
 }
 `;
