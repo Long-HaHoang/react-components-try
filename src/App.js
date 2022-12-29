@@ -1,7 +1,11 @@
-import "./App.css";
+import StyledCard from "./components/StyledCard";
 
 function App() {
-  return <div></div>;
+  return (
+    <main>
+      <StyledCard />
+    </main>
+  );
 }
 
 export default App;
