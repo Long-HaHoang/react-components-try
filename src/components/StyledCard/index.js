@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import CardHexCode from "../CardHexCode";
+import DeleteButton from "../DeleteButton";
 
 const StyledCard = styled.div`
+  position: relative;
   width: 200px;
   aspect-ratio: 1;
   background-color: #cccccc;
@@ -15,6 +17,7 @@ export default function StyledCardComponent({ hexCode }) {
   return (
     <StyledCard>
       <CardHexCode colorCode={handleHexCode(hexCode)} />
+      <DeleteButton />
     </StyledCard>
   );
 }

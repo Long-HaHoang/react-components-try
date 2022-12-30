@@ -11,6 +11,9 @@ function App() {
       <Divider />
       <StyledH2>Second Component with function</StyledH2>
       <StyledCard hexCode={initialColors[1]} />
+      <Divider />
+      <StyledH2>Third Component add deleteButton</StyledH2>
+      <StyledCard hexCode={initialColors[1]} />
     </main>
   );
 }
