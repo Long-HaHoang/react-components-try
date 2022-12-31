@@ -13,11 +13,22 @@ const StyledCard = styled.div`
   justify-content: center;
   align-items: center;
 `;
-export default function StyledCardComponent({ hexCode }) {
+export default function StyledCardComponent({
+  hexCode,
+  colorCardId,
+  onColorState,
+  onHandleDelete,
+  onSetColorsState,
+}) {
   return (
     <StyledCard>
       <CardHexCode colorCode={handleHexCode(hexCode)} />
-      <DeleteButton />
+      <DeleteButton
+        colorCardId={colorCardId}
+        onHandleDeleteProp={onHandleDelete}
+        onColorStateProp={onColorState}
+        onSetColorsStateProp={onSetColorsState}
+      />
     </StyledCard>
   );
 }
