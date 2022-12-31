@@ -12,8 +12,24 @@ const StyledDeleteButton = styled.button`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  padding: 0;
+  font-size: 1em;
 `;
 
-export default function DeleteButton() {
-  return <StyledDeleteButton type="button">&times;</StyledDeleteButton>;
+export default function DeleteButton({
+  colorCardId,
+  onHandleDeleteProp,
+  onColorStateProp,
+  onSetColorsStateProp,
+}) {
+  return (
+    <StyledDeleteButton
+      type="button"
+      onClick={() =>
+        onHandleDeleteProp(colorCardId, onColorStateProp, onSetColorsStateProp)
+      }
+    >
+      &times;
+    </StyledDeleteButton>
+  );
 }
