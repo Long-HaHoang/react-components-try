@@ -8,5 +8,5 @@ export default function getRandomColor() {
 
   const colorHex = `#${hexValue()}${hexValue()}${hexValue()}`;
 
-  return console.log(colorHex);
+  return colorHex;
 }
