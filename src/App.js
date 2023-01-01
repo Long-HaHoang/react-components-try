@@ -1,6 +1,7 @@
 import initialColors from "./util/initialColors.js";
 import createEachCard from "./util/createEachCard.js";
 import handleDelete from "./util/handleDelete.js";
+import addNewCard from "./util/addNewCard.js";
 
 import StyledCard from "./components/StyledCard";
 import Divider from "./components/Divider";
@@ -50,7 +51,9 @@ function App() {
 
       <Divider />
       <StyledH2>Sixth Component delete function </StyledH2>
-      <AddButton addColorsState={addColors} setAddColorsProp={setAddColors} />
+      <AddButton onClick={() => addNewCard(addColors, setAddColors)}>
+        ADD
+      </AddButton>
       <FlexContainer>
         {createEachCard(addColors, handleDelete, setAddColors)}
       </FlexContainer>

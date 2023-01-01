@@ -12,12 +12,4 @@ const StyledAddButton = styled.button`
   cursor: pointer;
 `;
 
-export default function AddButton() {
-  return (
-    <StyledAddButton
-      onClick={() => console.log("More is better...", crypto.randomUUID())}
-    >
-      ADD
-    </StyledAddButton>
-  );
-}
+export default StyledAddButton;
