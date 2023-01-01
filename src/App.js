@@ -52,7 +52,7 @@ function App() {
       <Divider />
       <StyledH2>Sixth Component delete function </StyledH2>
       <AddButton onClick={() => addNewCard(addColors, setAddColors)}>
-        ADD
+        ADD RANDOM
       </AddButton>
       <FlexContainer>
         {createEachCard(addColors, handleDelete, setAddColors)}
